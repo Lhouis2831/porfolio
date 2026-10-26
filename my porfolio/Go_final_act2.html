@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+        <a class="back-link" href="./Porfolio.html#projects" aria-label="Return to the portfolio projects section">
+            ← Back to Portfolio
+        </a>
+        <h1 id="title">Welcome to My Profile</h1>
+        <p id="para">My profile</p>
+
+    <div class="profile">
+       
+
+        <h3>Student information</h3>
+        <p id="name">Name: LHOUIS DIOR A. GO</p>
+        <p id="course">Course: BSIT</p>
+        <p id="YL">Year-Level: 3rd-Year</p>
+
+        <button id="btn">Change title</button>
+        <button id="btn2">Hide Profile</button>
+        <button id="btn3">Show Profile</button>
+        
+    </div>
+    <br>
+    <br>
+    <div id="Course">
+
+        <h2>Choose Your Course</h2>
+
+        <select id="course">
+            <option hidden>Select Course</option>
+            <option value="BSIT">BSIT</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSCS">BSIS</option>
+            <option value="BSCS">BSHM</option>
+        </select>
+        <p id="sel">No Course Selected</p>
+
+    </div>
+
+    <div class="list">
+
+        <table border="1" id="table">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year Level</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>BSIT</td>
+                <td>3rd Year</td>
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>BSCS</td>
+                <td>3rd Year</td>
+            </tr>
+             <tr>
+                <td>3</td>
+                <td>Pedro</td>
+                <td>BSIS</td>
+                <td>2nd Year</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ana</td>
+                <td>BSIT</td>
+                <td>3rd Year</td>
+            </tr>
+            </table>
+            <br><br>
+
+            <button id="odd">Apply Odd Rows</button>
+            <button id="evan">Apply Even Rows</button>
+            <br>
+            <p>Choose an Action for the talbe.</p>
+        
+    
+    </div>
+
+    <style>
+        body{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .back-link{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 10px;
+            background-color: #0f172a;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+        .back-link:hover,
+        .back-link:focus-visible{
+            background-color: #1e293b;
+            text-decoration: underline;
+        }
+        @media (max-width: 480px){
+            .back-link{
+                top: 12px;
+                left: 12px;
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+        button{
+            background-color: gray;
+            color: white;
+            border-radius: 10px;
+            border: none;
+        }
+        table{
+            gap: 50px;
+            margin-top: 50px;
+            margin-left: 350px;
+        }
+        tr,th,td{
+            height: 30px;
+            width: 150px;
+        }
+
+    </style>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

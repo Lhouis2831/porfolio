@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="cssporfolio.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">My Portfolio</h2>
+
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Lhouis Dior Go</h1>
+            <h2>I'm a <span id="typing"></span></h2>
+
+            <p>
+                Welcome to my personal portfolio website
+                <br>    
+                I am a IT Student 
+            </p>
+
+            <a href="#contact" class="btn">Contact</a>
+            <a href="#projects" class="btn secondary">View Projects</a>
+        </div>
+
+        <div class="home-image">
+            <img src="img.jpg"
+                 alt="home-image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-content">
+            <p>
+                Hello! My name is Your Name. I am a student who is
+                interested in web development and information technology.
+
+                I enjoy learning new programming languages and
+                developing websites that are useful and creative.
+
+                My goal is to improve my skills and become a
+                successful IT professional in the future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="heading">My <span>Skill</span></h2>
+
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>HTML</h3>
+                <p>Website Structure</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>CSS</h3>
+                <p>Website Design</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>JavaScript</h3>
+                <p>Website Functionality</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Computer Skills</h3>
+                <p>Basic Computer Troubleshooting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <article class="project-box project-feature featured-projects">
+                <div class="project-feature-preview">
+                    <iframe
+                        src="Go_final_act2.html"
+                        title="Preview of the Go_final_act2 student profile project"
+                        loading="lazy"
+                        tabindex="-1"
+                        aria-hidden="true"></iframe>
+                </div>
+                <div class="project-feature-content">
+                    <h3>Go_final_act2</h3>
+                    <p>
+                        An interactive student profile with course selection and
+                        student table controls.
+                    </p>
+                    <a class="project-feature-link" href="Go_final_act2.html">
+                        View Website <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-box project-feature featured-projects">
+                <div class="project-feature-preview">
+                    <iframe
+                        src="go_final_act1.html"
+                        title="Preview of the Go_final_act1 interactive profile project"
+                        loading="lazy"
+                        tabindex="-1"
+                        aria-hidden="true"></iframe>
+                </div>
+                <div class="project-feature-content">
+                    <h3>Go_final_act1</h3>
+                    <p>
+                        An interactive student profile activity with course
+                        selection, text input, and button events.
+                    </p>
+                    <a class="project-feature-link" href="go_final_act1.html">
+                        View Website <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-heading">
+            <p class="contact-eyebrow">LET’S CONNECT</p>
+            <h2 class="heading">Find me <span>online.</span></h2>
+            <p>Choose your preferred way to get in touch.</p>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-intro">
+                <span class="contact-mark" aria-hidden="true">✦</span>
+                <div>
+                    <h3>My Contact</h3>
+                    <p>You can find me here</p>
+                </div>
+            </div>
+
+            <div class="contact-links">
+                <a class="contact-link facebook-link"
+                   href="https://www.facebook.com"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="contact-link-icon facebook-icon" aria-hidden="true">f</span>
+                    <span class="contact-link-copy">
+                        <strong>Facebook</strong>
+                        <span>facebook.com</span>
+                    </span>
+                    <span class="contact-link-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="contact-link x-link"
+                   href="https://x.com"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="contact-link-icon x-icon" aria-hidden="true">𝕏</span>
+                    <span class="contact-link-copy">
+                        <strong>X</strong>
+                        <span>x.com</span>
+                    </span>
+                    <span class="contact-link-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="contact-link instagram-link"
+                   href="https://www.instagram.com"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="contact-link-icon instagram-icon" aria-hidden="true">◎</span>
+                    <span class="contact-link-copy">
+                        <strong>Instagram</strong>
+                        <span>instagram.com</span>
+                    </span>
+                    <span class="contact-link-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>© 2026 Lhouis Dior Go | My Personal Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

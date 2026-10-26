@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go_final_act1 | Interactive Profile</title>
+</head>
+<body>
+    <main class="activity-page">
+        <a class="activity-back-link" href="Porfolio.html#projects">← Back to Portfolio</a>
+        <section class="activity-card" aria-labelledby="name">
+            <img src="boom.png" alt="Profile emblem" id="imahe">
+            <h1 id="name">GO, LHOUIS</h1>
+            <p id="course">BS Information Technology</p>
+
+            <label for="txt">Enter text</label>
+            <input type="text" id="txt" placeholder="Type something...">
+
+            <label for="select">Choose a course</label>
+            <select id="select">
+                <option value="" disabled selected>Select course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSCS">BSCS</option>
+                <option value="BSHM">BSHM</option>
+                <option value="BSOAD">BSOAD</option>
+            </select>
+
+            <div class="activity-actions">
+                <button id="btn1" type="button">Click</button>
+                <button id="btn2" type="button">Double click</button>
+                <button id="btn3" type="button">Press &amp; hold</button>
+            </div>
+            <p id="last" aria-live="polite">Ready for an action.</p>
+        </section>
+    </main>
+    <script src="go_final_act1.js"></script>
+</body>
+</html>

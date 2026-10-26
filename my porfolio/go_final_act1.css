@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+.activity-page {
+    display: grid;
+    min-height: calc(100vh - 48px);
+    place-items: center;
+}
+
+.activity-back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.activity-back-link:hover,
+.activity-back-link:focus-visible {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+.activity-card {
+    display: flex;
+    width: min(100%, 420px);
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 32px;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    background: #1e293b;
+    text-align: center;
+}
+
+.activity-card #imahe {
+    width: 88px;
+    height: 88px;
+    border: 3px solid #38bdf8;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.activity-card h1 {
+    margin: 0;
+    color: #38bdf8;
+    font-size: 26px;
+}
+
+.activity-card h1.highlighted {
+    color: #facc15;
+}
+
+.activity-card > p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+.activity-card label {
+    align-self: flex-start;
+    margin-top: 4px;
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.activity-card input,
+.activity-card select {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #f8fafc;
+    font: inherit;
+}
+
+.activity-card input:focus,
+.activity-card select:focus {
+    border-color: #38bdf8;
+    outline: 2px solid rgba(56, 189, 248, 0.25);
+}
+
+.activity-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.activity-actions button {
+    min-height: 40px;
+    padding: 9px 13px;
+    border: 0;
+    border-radius: 8px;
+    background: #0284c7;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
+.activity-actions button:hover,
+.activity-actions button:focus-visible {
+    background: #0369a1;
+}
+
+#last {
+    min-height: 22px;
+}
+
+@media (max-width: 480px) {
+    .activity-card {
+        padding: 26px 20px;
+    }
+
+    .activity-back-link {
+        top: 14px;
+        left: 14px;
+        font-size: 14px;
+    }
+}
